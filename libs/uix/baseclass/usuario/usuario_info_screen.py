@@ -1,6 +1,6 @@
 from kivymd.uix.screen import MDScreen
 
-class JazigoScreen(MDScreen):
+class UsuarioInfoScreen(MDScreen):
     """
-    Example Screen.
+    Example Screen
     """

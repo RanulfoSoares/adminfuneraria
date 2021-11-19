@@ -9,6 +9,14 @@ import traceback  # NOQA: E402
 
 from kivy.factory import Factory  # NOQA: E402
 from adminfuneraria import adminfuneraria  # NOQA: E402
+from kivy.config import Config
+from kivy.core.window import Window
+
+Window.size = (320, 580)
+
+Config.set('graphics', 'width', 320)
+Config.set('graphics', 'height', 580)
+Config.write()
 
 __version__ = "1.0"
 

@@ -1,8 +1,31 @@
 {
+
+    "jazigo": {
+        "import": "from libs.uix.baseclass.jazigo.jazigo_screen import JazigoScreen",
+        "kv": "libs/uix/kv/jazigo/jazigo_screen.kv",
+        "object": "JazigoScreen()"
+    },
     "login": {
-        "import": "from libs.uix.baseclass.login_screen import LoginScreen",
-        "kv": "libs/uix/kv/login_screen.kv",
+        "import": "from libs.uix.baseclass.login.login_screen import LoginScreen",
+        "kv": "libs/uix/kv/login/login_screen.kv",
         "object": "LoginScreen()"
+    },
+     
+    "cidadaoinfo": {
+        "import": "from libs.uix.baseclass.cidadao.cidadao_info_screen import CidadaoInfoScreen",
+        "kv": "libs/uix/kv/cidadao/cidadao_info_screen.kv",
+        "object": "CidadaoInfoScreen()"
+    },
+    
+    "cidadao": {
+        "import": "from libs.uix.baseclass.cidadao.cidadao_screen import CidadaoScreen",
+        "kv": "libs/uix/kv/cidadao/cidadao_screen.kv",
+        "object": "CidadaoScreen()"
+    },
+    "cidadaocriar": {
+        "import": "from libs.uix.baseclass.cidadao.cidadao_criar_screen import CidadaoCriarScreen",
+        "kv": "libs/uix/kv/cidadao/cidadao_criar_screen.kv",
+        "object": "CidadaoCriarScreen()"
     },
     "home": {
         "import": "from libs.uix.baseclass.home_screen import HomeScreen",
@@ -10,45 +33,45 @@
         "object": "HomeScreen()"
     },
 
-    "cidadao": {
-        "import": "from libs.uix.baseclass.cidadao_screen import CidadaoScreen",
-        "kv": "libs/uix/kv/cidadao_screen.kv",
-        "object": "CidadaoScreen()"
-
-    },
+   
     "usuario": {
-        "import": "from libs.uix.baseclass.usuario_screen import UsuarioScreen",
-        "kv": "libs/uix/kv/usuario_screen.kv",
+        "import": "from libs.uix.baseclass.usuario.usuario_screen import UsuarioScreen",
+        "kv": "libs/uix/kv/usuario/usuario_screen.kv",
         "object": "UsuarioScreen()"
     },
-
-    "jazigo": {
-        "import": "from libs.uix.baseclass.jazigo_screen import JazigoScreen",
-        "kv": "libs/uix/kv/jazigo_screen.kv",
-        "object": "JazigoScreen()"
+    "usuarioinfo": {
+        "import": "from libs.uix.baseclass.usuario.usuario_info_screen import UsuarioInfoScreen",
+        "kv": "libs/uix/kv/usuario/usuario_info_screen.kv",
+        "object": "UsuarioInfoScreen()"
+    },
+    "usuariocriar": {
+        "import": "from libs.uix.baseclass.usuario.usuario_criar_screen import UsuarioCriarScreen",
+        "kv": "libs/uix/kv/usuario/usuario_criar_screen.kv",
+        "object": "UsuarioCriarScreen()"
     },
     "estatistica": {
-        "import": "from libs.uix.baseclass.estatistica_screen import EstatisticaScreen",
-        "kv": "libs/uix/kv/estatistica_screen.kv",
+        "import": "from libs.uix.baseclass.estatistica.estatistica_screen import EstatisticaScreen",
+        "kv": "libs/uix/kv/estatistica/estatistica_screen.kv",
         "object": "EstatisticaScreen()"
     },
 
     "logradouro": {
-        "import": "from libs.uix.baseclass.logradouro_screen import LogradouroScreen",
-        "kv": "libs/uix/kv/logradouro_screen.kv",
+        "import": "from libs.uix.baseclass.logradouro.logradouro_screen import LogradouroScreen",
+        "kv": "libs/uix/kv/logradouro/logradouro_screen.kv",
         "object": "LogradouroScreen()"
     },
 
     "setor": {
-        "import": "from libs.uix.baseclass.setor_screen import SetorScreen",
-        "kv": "libs/uix/kv/setor_screen.kv",
+        "import": "from libs.uix.baseclass.setor.setor_screen import SetorScreen",
+        "kv": "libs/uix/kv/setor/setor_screen.kv",
         "object": "SetorScreen()"
     },
 
     "instituicao": {
-        "import": "from libs.uix.baseclass.instituicao_screen import InstituicaoScreen",
-        "kv": "libs/uix/kv/instituicao_screen.kv",
+        "import": "from libs.uix.baseclass.instituicao.instituicao_screen import InstituicaoScreen",
+        "kv": "libs/uix/kv/instituicao/instituicao_screen.kv",
         "object": "InstituicaoScreen()"
     }
+   
 
 }

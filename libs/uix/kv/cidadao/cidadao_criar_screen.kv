@@ -1,0 +1,78 @@
+<CidadaoScreen>
+    name: 'cidadao'
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDToolbar:
+            title:"Cidadão"
+            id:toolbar
+            right_action_items:[["dots-vertical", lambda x: root.abrir()]]
+
+        MDFloatLayout:
+            adaptive: True
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o nome"
+                pos_hint: {'center_x': 0.3, 'center_y':0.9}
+                id: nome
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o cpf"
+                pos_hint: {'center_x': 0.3, 'center_y':0.8}
+                id: cpf
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o rg"
+                pos_hint: {'center_x': 0.3, 'center_y':0.7}
+                id: rg
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a Certidão de nascimento"
+                pos_hint: {'center_x': 0.3, 'center_y':0.6}
+                id: certidao_nascimento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o Reg. Nac de Estr"
+                pos_hint: {'center_x': 0.3, 'center_y':0.5}
+                id: rne
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite um telefone"
+                pos_hint: {'center_x': 0.3, 'center_y':0.4}
+                id: fone_i
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite um telefone"
+                pos_hint: {'center_x': 0.3, 'center_y':0.3}
+                id: fone_ii
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o sexo"
+                pos_hint: {'center_x': 0.3, 'center_y':0.2}
+                id: sexo
+            MDRaisedButton:
+                text: 'criar cidadao'
+                pos_hint: {'center_x': 0.3, 'center_y': .1}
+                on_release:
+                    if root.inserir_dados() == True: app.root.current = 'cidadao'
+
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a cor"
+                pos_hint: {'center_x': 0.3, 'center_y':-2}
+                id: Cor
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o estado civil"
+                pos_hint: {'center_x': 0.3, 'center_y':0.0}
+                id: estado_civil
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a data de nascimento"
+                pos_hint: {'center_x': 0.3, 'center_y':-1}
+                id: data_nascimento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o logradouro"
+                pos_hint: {'center_x': 0.3, 'center_y':-2}
+                id: logradouro

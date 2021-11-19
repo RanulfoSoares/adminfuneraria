@@ -1,0 +1,46 @@
+<CidadaoInfoScreen>
+
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDToolbar:
+            title: "Cidadão"
+            right_action_items: [["dots-vertical", lambda x: x]]
+            
+        MDList:
+            TwoLineListItem:
+                tex: "Nome"
+                secondary_text: root.nome
+            TwoLineListItem:
+                text: "CPF"
+                secondary_text: root.cpf
+            TwoLineListItem:
+                text: "RG"
+                secondary_text: root.rg
+            TwoLineListItem:
+                text: "Certidão Nascimento"
+                secondary_text: root.certidao_nascimento
+            TwoLineListItem:
+                text: "RNE"
+                secondary_text: root.rne
+            TwoLineListItem:
+                text: "Fone I"
+                secondary_text: root.fone_i
+            TwoLineListItem:
+                text: "Fone II"
+                secondary_text: root.fone_ii
+            TwoLineListItem:
+                text: "Sexo"
+                secondary_text: root.sexo
+            TwoLineListItem:
+                text: "Cor"
+                secondary_text: root.cor
+            TwoLineListItem:
+                text: "Estado Civil"
+                secondary_text: root.estado_civil
+            TwoLineListItem:
+                text: "Data de Nascimento"
+                secondary_text: root.data_nascimento
+            TwoLineListItem:
+                text: "Logradouro"
+                secondary_text: root.logradouro

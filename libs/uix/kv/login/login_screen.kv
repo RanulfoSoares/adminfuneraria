@@ -5,24 +5,24 @@
 
         MDFloatLayout:
             FitImage:
-                size_hint: 0.5 , 0.5
+                size_hint: 0.8 , 0.3
                 pos_hint: {'center_x': 0.5, 'center_y': 0.7}
-                source: 'https://via.placeholder.com/150'
-            
+                source: 'assets/images/Login.png'
             MDTextField:
+                id:cpf
                 size_hint_x: 0.5
-                hint_text: "Digite seu CPF"                
+                hint_text: "Digite seu CPF"
                 pos_hint: {'center_x': 0.5, 'center_y': 0.4}
 
             MDTextField:
+                id:senha
                 size_hint_x: 0.5
-                hint_text: "Digite sua senha"                
+                hint_text: "Digite sua senha"
                 pos_hint: {'center_x': 0.5, 'center_y': .3}
-
-                    
             MDRaisedButton:
                 size_hint_x: 0.5
                 text: "Logar"
                 md_bg_color: 1, 0, 1, 1
                 pos_hint: {'center_x': 0.5, 'center_y': .2}
-                on_release: app.root.current = 'home'
+                on_release:
+                    if root.login(): app.root.current = 'home'
