@@ -1,68 +1,73 @@
-<SetorCriarScreen>
-    name: 'instituicao'
+<JazigoScreen>
+    name: 'jazigo'
     MDBoxLayout:
         orientation: "vertical"
 
         MDToolbar:
-            title:"Setor"
+            title:"Jazigo"
             id:toolbar
             right_action_items:[["dots-vertical", lambda x: root.abrir()]]
 
-        MDFloatLayout:
-            adaptive: True
+            MDFloatLayout:
+                adaptive: True
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o número do jazigo"
+                pos_hint: {'center_x': 0.3, 'center_y':0.9}
+                id: jazigo
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a quadra"
+                pos_hint: {'center_x': 0.3, 'center_y':0.8}
+                id: quadra
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a rua"
+                pos_hint: {'center_x': 0.3, 'center_y':0.7}
+                id: rua
             MDTextField:
                 size_hint_x: 0.5
                 hint_text: "Digite o setor"
-                pos_hint: {'center_x': 0.3, 'center_y':0.9}
-                id: nome_setor
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Escolha o setor"
-                pos_hint: {'center_x': 0.3, 'center_y':0.8}
-                id: tipo_setor
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o telefone"
-                pos_hint: {'center_x': 0.3, 'center_y':0.7}
-                id: fone_i
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o telefone"
                 pos_hint: {'center_x': 0.3, 'center_y':0.6}
-                id: fone_i
+                id: setor
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite o email"
+                hint_text: "Selecione"
                 pos_hint: {'center_x': 0.3, 'center_y':0.5}
-                id: email
+                id: jazigo_perpetuo_provisorio
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite um contato"
+                hint_text: "Comprador da sepultura"
                 pos_hint: {'center_x': 0.3, 'center_y':0.4}
-                id: contato
+                id: comprador_jazigo
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite telefone de contato"
+                hint_text: "Digite o valor da sepultura"
                 pos_hint: {'center_x': 0.3, 'center_y':0.3}
-                id: fone_contato_i
+                id: jazigo_valor_pago
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite telefone de contato"
+                hint_text: "Digite o valor do sepultamento"
                 pos_hint: {'center_x': 0.3, 'center_y':0.2}
-                id: fone_contato_ii
+                id: sepultamento_valor_pago
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o valor total pago"
+                pos_hint: {'center_x': 0.3, 'center_y':0.1}
+                id: valor_total_pago
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o número do recibo"
+                pos_hint: {'center_x': 0.3, 'center_y':0.0}
+                id: recibo_pagto_numero
             MDTextField:
                 size_hint_x: 0.5
                 hint_text: "Digite uma observação"
-                pos_hint: {'center_x': 0.3, 'center_y':0.1}
+                pos_hint: {'center_x': 0.3, 'center_y':-1}
                 id: observacao
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o logradouro"
-                pos_hint: {'center_x': 0.3, 'center_y':0.0}
-                id: logradouro
 
             MDRaisedButton:
-                text: 'criar setor'
+                text: "criar jazigo"
                 pos_hint: {'center_x': 0.3, 'center_y': .1}
                 on_release:
-                    if root.inserir_dados() == True: app.root.current = 'setor'
+                    if root.inserir_dados() == True: app.root.current = 'jazigo'

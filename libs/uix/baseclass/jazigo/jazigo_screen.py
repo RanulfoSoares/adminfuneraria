@@ -23,7 +23,7 @@ class JazigoScreen(MDScreen):
         self.ids.buscar.opacity = 1
 
         if item == 'nome':
-            self.ids.dados.hint_text = 'Digite o nome'
+            self.ids.dados.hint_text = 'Digite o numero do jazigo'
         if item == 'jazigo':
             self.ids.dados.hint_text = 'Digite o numero do jazigo'
             

@@ -1,10 +1,10 @@
-<SetorCriarScreen>
-    name: 'instituicao'
+<CemiterioScreen>
+    name: 'cemiterio'
     MDBoxLayout:
         orientation: "vertical"
 
         MDToolbar:
-            title:"Setor"
+            title:"Cemiterio"
             id:toolbar
             right_action_items:[["dots-vertical", lambda x: root.abrir()]]
 
@@ -12,57 +12,71 @@
             adaptive: True
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite o setor"
+                hint_text: "Digite a razão social"
                 pos_hint: {'center_x': 0.3, 'center_y':0.9}
-                id: nome_setor
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Escolha o setor"
+                id: nome
+            size_hint_x: 0.5
+                hint_text: "Digite o nome fantasia"
                 pos_hint: {'center_x': 0.3, 'center_y':0.8}
-                id: tipo_setor
+                id: apelido
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite o telefone"
+                hint_text: "Digite o cnpj"
                 pos_hint: {'center_x': 0.3, 'center_y':0.7}
+                id: cpf
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Selecione"
+                pos_hint: {'center_x': 0.3, 'center_y':0.6}
+                id: rg
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a data de inauguração"
+                pos_hint: {'center_x': 0.3, 'center_y':0.5}
+                id: certidao_nascimento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o diretor responsável"
+                pos_hint: {'center_x': 0.3, 'center_y':0.4}
+                id: rne
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite um telefone"
+                pos_hint: {'center_x': 0.3, 'center_y':0.3}
                 id: fone_i
             MDTextField:
                 size_hint_x: 0.5
-                hint_text: "Digite o telefone"
-                pos_hint: {'center_x': 0.3, 'center_y':0.6}
-                id: fone_i
+                hint_text: "Digite um telefone"
+                pos_hint: {'center_x': 0.3, 'center_y':0.2}
+                id: fone_ii
             MDTextField:
                 size_hint_x: 0.5
                 hint_text: "Digite o email"
-                pos_hint: {'center_x': 0.3, 'center_y':0.5}
-                id: email
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite um contato"
-                pos_hint: {'center_x': 0.3, 'center_y':0.4}
-                id: contato
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite telefone de contato"
-                pos_hint: {'center_x': 0.3, 'center_y':0.3}
-                id: fone_contato_i
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite telefone de contato"
-                pos_hint: {'center_x': 0.3, 'center_y':0.2}
-                id: fone_contato_ii
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite uma observação"
                 pos_hint: {'center_x': 0.3, 'center_y':0.1}
-                id: observacao
+                id: sexo
             MDTextField:
                 size_hint_x: 0.5
                 hint_text: "Digite o logradouro"
                 pos_hint: {'center_x': 0.3, 'center_y':0.0}
+                id: Cor
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o bairro"
+                pos_hint: {'center_x': 0.3, 'center_y':-1}
+                id: estado_civil
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a cidade"
+                pos_hint: {'center_x': 0.3, 'center_y':-2}
+                id: data_nascimento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Insira uma observação"
+                pos_hint: {'center_x': 0.3, 'center_y':-3}
                 id: logradouro
 
             MDRaisedButton:
-                text: 'criar setor'
+                text: 'criar cemiterio'
                 pos_hint: {'center_x': 0.3, 'center_y': .1}
                 on_release:
-                    if root.inserir_dados() == True: app.root.current = 'setor'
+                    if root.inserir_dados() == True: app.root.current = 'cemiterio'

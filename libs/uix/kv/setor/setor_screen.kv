@@ -6,4 +6,45 @@
         MDToolbar:
             title: "Setor"
             right_action_items:[["dots-vertical", lambda x: x]]
+
         MDFloatLayout:
+            MDRaisedButton:
+                pos_hint: {'center_x':.2, 'center_y':.9}
+                id:Button:
+                text: 'Faça uma busca'
+                on_release: root.abrir()
+
+            MDTextField:
+                opacity: 0.0
+                size_hint_x: 0.5
+                hint_text: ""
+                pos_hint: {'center_x':0.5, 'center_y':0.4}
+                id: dados
+
+            MDRaisedButton:
+                opacity: 0.0
+                pos_hint: {'center_x':.5, 'center_y':.3}
+
+                id: buscar
+                text: "buscar"
+                on_release: root.search()
+
+            MDTextButton:
+                opacity:0.0
+                id: erro
+                text: "Informação não encontrada"
+                pos_hint: {'center_x':0.5, 'center_y':0.6}
+                on_release: print('teste')
+                
+            MDRaisedButton:
+                icon: "card-search"
+                pos_hint: {'center_x':0.7, 'center_y':0.6}
+                opacity: 1.0
+                id:info
+                on_release: app.root.current - 'setorinfo'
+
+            MDRaisedButton:
+                text: "Criar novo cidadão"
+                pos_hint: {'center_x':0.2, 'center_y':0.8}
+                id: button
+                on_release: app.root.current - 'setorcriar'

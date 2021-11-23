@@ -9,3 +9,115 @@
             right_action_items:[["dots-vertical", lambda x: root.abrir()]]
 
         MDFloatLayout:
+            adaptive: True
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o nome do usuário"
+                pos_hint: {'center_x': 0.3, 'center_y':0.9}
+                id: nome_usuario
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o nome usual"
+                pos_hint: {'center_x': 0.3, 'center_y':0.8}
+                id: nome_usual
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a senha"
+                pos_hint: {'center_x': 0.3, 'center_y':0.7}
+                id: senha_i
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Repite a senha"
+                pos_hint: {'center_x': 0.3, 'center_y':0.6}
+                id: senha_ii
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o CPF"
+                pos_hint: {'center_x': 0.3, 'center_y':0.5}
+                id: cpf
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o RG"
+                pos_hint: {'center_x': 0.3, 'center_y':0.4}
+                id: rg
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a Certidão de Nascimento"
+                pos_hint: {'center_x': 0.3, 'center_y':0.3}
+                id: certidao_nascimento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o RNE"
+                pos_hint: {'center_x': 0.3, 'center_y':0.2}
+                id: rne
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a data de nascimento"
+                pos_hint: {'center_x': 0.3, 'center_y':0.1}
+                id: data_nascimento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Idade"
+                pos_hint: {'center_x': 0.3, 'center_y':0.0}
+                id: idade
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o telefone"
+                pos_hint: {'center_x': 0.3, 'center_y':-1}
+                id: fone_ii
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o telefone"
+                pos_hint: {'center_x': 0.3, 'center_y':-2}
+                id: fone_ii
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o sexo"
+                pos_hint: {'center_x': 0.3, 'center_y':-3}
+                id: sexo
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a cor"
+                pos_hint: {'center_x': 0.3, 'center_y':-4}
+                id: cor
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a escolaridade"
+                pos_hint: {'center_x': 0.3, 'center_y':-5}
+                id: escolaridade
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a situação matrimonial"
+                pos_hint: {'center_x': 0.3, 'center_y':-6}
+                id: situacao_matrimonial
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o email"
+                pos_hint: {'center_x': 0.3, 'center_y':-7}
+                id: email
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a função"
+                pos_hint: {'center_x': 0.3, 'center_y':-8}
+                id: funcao
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a data de admissão"
+                pos_hint: {'center_x': 0.3, 'center_y':-9}
+                id: data_admissao
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite a data de desligamento"
+                pos_hint: {'center_x': 0.3, 'center_y':-10}
+                id: data_desligamento
+            MDTextField:
+                size_hint_x: 0.5
+                hint_text: "Digite o logradouro"
+                pos_hint: {'center_x': 0.3, 'center_y':-11}
+                id: logradouro
+
+            MDRaisedButton:
+                text: 'criar usuario'
+                pos_hint: {'center_x': 0.3, 'center_y': .1}
+                on_release:
+                    if root.inserir_dados() == True: app.root.current = 'usuario'

@@ -1,0 +1,38 @@
+{
+    "Ranulfo Soares": {
+        "nome": "Ranulfo Soares",
+        "cpf": "7176841849",
+        "rg": "884985",
+        "certidao_nascimento": "123456789987",
+        "rne": "12365987456",
+        "fone_i": "19983247556",
+        "fone_ii": "1999893833",
+        "sexo": "masculino"
+    },
+    "joao victor": {
+        "nome": "joao victor",
+        "cpf": "61499546363",
+        "rg": "0490133355",
+        "certidao_nascimento": "01478523658",
+        "rne": "4152630256",
+        "fone_i": "98983135506",
+        "fone_ii": "98983135506",
+        "sexo": "masculino"
+    },
+    "joao": {
+        "nome": "joao",
+        "idade": 21,
+        "casado": false,
+        "altura": 1.63
+    },
+    "maria eduarda": {
+        "nome": "maria eduarda",
+        "cpf": "5555555555",
+        "rg": "88888888",
+        "certidao_nascimento": "11111111111",
+        "rne": "333333333333",
+        "fone_i": "98598598598",
+        "fone_ii": "98598598585",
+        "sexo": "femino"
+    }
+}

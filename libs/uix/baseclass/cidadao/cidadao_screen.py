@@ -7,8 +7,8 @@ class CidadaoScreen(MDScreen):
     """
     Example Screen.
     """
-    dados = JsonStore('hello.json')
-    
+    dados = JsonStore('banco/hello.json')
+    menu = None
     def filtro(self, item):
         self.ids.dados.opacity = 1
         self.ids.buscar.opacity = 1
@@ -46,7 +46,7 @@ class CidadaoScreen(MDScreen):
             } for index in range(len(opcoes))
             ]
         self.menu = MDDropdownMenu(
-            caller=self.ids.toolbar,
+            caller=self.ids.button,
             items= menu_items,
             width_mult=2
         )

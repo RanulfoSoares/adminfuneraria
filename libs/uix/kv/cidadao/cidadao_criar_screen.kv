@@ -1,4 +1,4 @@
-<CidadaoScreen>
+<CidadaoCriarScreen>
     name: 'cidadao'
     MDBoxLayout:
         orientation: "vertical"
@@ -7,72 +7,94 @@
             title:"Cidadão"
             id:toolbar
             right_action_items:[["dots-vertical", lambda x: root.abrir()]]
+        ScrollView:
 
-        MDFloatLayout:
-            adaptive: True
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o nome"
-                pos_hint: {'center_x': 0.3, 'center_y':0.9}
-                id: nome
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o cpf"
-                pos_hint: {'center_x': 0.3, 'center_y':0.8}
-                id: cpf
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o rg"
-                pos_hint: {'center_x': 0.3, 'center_y':0.7}
-                id: rg
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite a Certidão de nascimento"
-                pos_hint: {'center_x': 0.3, 'center_y':0.6}
-                id: certidao_nascimento
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o Reg. Nac de Estr"
-                pos_hint: {'center_x': 0.3, 'center_y':0.5}
-                id: rne
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite um telefone"
-                pos_hint: {'center_x': 0.3, 'center_y':0.4}
-                id: fone_i
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite um telefone"
-                pos_hint: {'center_x': 0.3, 'center_y':0.3}
-                id: fone_ii
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o sexo"
-                pos_hint: {'center_x': 0.3, 'center_y':0.2}
-                id: sexo
-            MDRaisedButton:
-                text: 'criar cidadao'
-                pos_hint: {'center_x': 0.3, 'center_y': .1}
-                on_release:
-                    if root.inserir_dados() == True: app.root.current = 'cidadao'
-
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite a cor"
-                pos_hint: {'center_x': 0.3, 'center_y':-2}
-                id: Cor
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o estado civil"
-                pos_hint: {'center_x': 0.3, 'center_y':0.0}
-                id: estado_civil
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite a data de nascimento"
-                pos_hint: {'center_x': 0.3, 'center_y':-1}
-                id: data_nascimento
-            MDTextField:
-                size_hint_x: 0.5
-                hint_text: "Digite o logradouro"
-                pos_hint: {'center_x': 0.3, 'center_y':-2}
-                id: logradouro
+            MDBoxLayout:
+                orientation: 'vertical'
+                size_hint: None, None
+                height: self.minimum_height
+                MDTextField:
+                    height: 300
+                    hint_text: "Digite o nome"
+                    pos_hint: {'center_x': 0.6}
+                    id: nome
+                MDTextField:
+                    hint_text: "Digite o cpf"
+                    pos_hint: {'center_x': 0.6}
+                    id: cpf
+                MDTextField:
+                    hint_text: "Digite o rg"
+                    pos_hint: {'center_x': 0.6}
+                    id: rg
+                MDTextField:
+                    hint_text: "Digite a Certidão de Nascimento"
+                    pos_hint: {'center_x': 0.6}
+                    id: certidao_nascimento
+                MDTextField:
+                    hint_text: "Digite o Rne"
+                    helper_text: 'Reg. Nac de Estr'
+                    pos_hint: {'center_x': 0.6}
+                    id: rne
+                MDTextField:
+                    hint_text: "Digite telefone I"
+                    pos_hint: {'center_x': 0.6}
+                    id: fone_i
+                MDTextField:
+                    hint_text: "Digite telefone II"
+                    pos_hint: {'center_x': 0.6}
+                    id: fone_ii
+                MDTextButton:
+                    height: 300
+                    text: "Selecione o sexo"
+                    id: sexo
+                    pos_hint: {'center_x': 0.6}
+                    on_release: root.sexo()
+                MDTextButton:
+                    height: 300
+                    text: "Selecione a cor"
+                    id: Cor
+                    pos_hint: {'center_x': 0.6}
+                MDTextButton:
+                    height: 300
+                    pos_hint: {'center_x': 0.6}
+                    text: "Selecione o estado civil"
+                    id: estado_civil
+                    on_release: root.estado_civil()
+                MDTextField:
+                    hint_text: "Digite a data de nascimento"
+                    pos_hint: {'center_x': 0.6}
+                    id: data_nascimento
+                MDTextButton:
+                    height: 300
+                    id:estado
+                    pos_hint: {'center_x': 0.6}
+                    text: 'Escolha seu Estado'
+                    on_release: root.abrir_menu_estado()
+                MDTextButton:
+                    height: 300
+                    id: cidade
+                    pos_hint: {'center_x': 0.6}
+                    text: "Escolha sua cidade"
+                MDTextButton:
+                    height: 300
+                    id: bairro
+                    pos_hint: {'center_x': 0.6}
+                    text: "Escolha seu Bairro"
+                MDTextButton:
+                    height: 300
+                    text: "Escolha seu logradouro"
+                    pos_hint: {'center_x': 0.6}
+                    id: logradouro
+                MDTextField:
+                    hint_text: "Digite seu CEP"
+                    pos_hint: {'center_x': 0.6}
+                    id: cep
+                MDTextField:
+                    hint_text: 'Complemento: '
+                    id: complemento
+                    pos_hint: {'center_x': 0.6}
+                MDRaisedButton:
+                    text: 'criar cidadao'
+                    pos_hint: {'center_x': 0.6}
+                    on_release:
+                        if root.inserir_dados() == True: app.root.current = 'cidadao'

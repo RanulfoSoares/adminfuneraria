@@ -6,6 +6,7 @@ class CidadaoInfoScreen(MDScreen):
     Example Screen
     """
     nome = StringProperty()
+    apelido = StringProperty()
     logradouro = StringProperty()
     estado_civil = StringProperty()
     cpf = StringProperty()
@@ -20,6 +21,7 @@ class CidadaoInfoScreen(MDScreen):
     data_nascimento = StringProperty()
 
     nome = 'example'
+    apelido = 'apelido'
     logradouro = 'example'
     estado_civil = 'example'
     cpf = 'example'
@@ -30,7 +32,13 @@ class CidadaoInfoScreen(MDScreen):
     fone_ii = 'example'
     sexo = 'example'
     cor = 'example'
-    estado_civil = 'example'
     data_nascimento = 'example'
     
+    estado = 'example'
+    cidade = 'example'
+    bairro = 'example'
+    logradouro = 'example'
+    cep = 'example'
+    complemento = 'example'
+
     

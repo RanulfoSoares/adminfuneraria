@@ -1,10 +1,40 @@
-<SetorScreen>
+<SetorInfoScreen>
 
-MDBoxLayout:
-    orientatio: "vertical"
+    MDBoxLayout:
+        orientatio: "vertical"
 
-    MDToolbar:
-        title: "Setor"
-        right_action_items: [["dots-vertical", lambda x: x]]
+        MDToolbar:
+            title: "Setor"
+            right_action_items: [["dots-vertical", lambda x: x]]
 
-    MDFloatLayout:
+        MDList:
+            TwoLineListItem:
+                tex: "Nome setor"
+                secondary_text: root.nome_setor
+            TwoLineListItem:
+                text: "Tipo setor"
+                secondary_text: root.tipo_setor
+            TwoLineListItem:
+                text: "Fone I"
+                secondary_text: root.fone_i
+            TwoLineListItem:
+                text: "Fone I"
+                secondary_text: root.fone_i
+            TwoLineListItem:
+                text: "Fone II"
+                secondary_text: root.fone_ii
+            TwoLineListItem:
+                text: "Email"
+                secondary_text: root.email
+            TwoLineListItem:
+                text: "Contato"
+                secondary_text: root.contato
+            TwoLineListItem:
+                text: "Fone contato"
+                secondary_text: root.fone_contato_i
+            TwoLineListItem:
+                text: "Fone contato"
+                secondary_text: root.fone_contato_i
+            TwoLineListItem:
+                text: "Observação"
+                secondary_text: root.observacao

@@ -1,28 +1,31 @@
-<InstituicaoScreen>
+<CemiterioInfoScreen>
 
     MDBoxLayout:
-        orientatio: "vertical"
+        orientation: 'vertical'
 
         MDToolbar:
-            title: "Cidadão"
+            title: "Cemiterio"
             right_action_items: [["dots-vertical", lambda x: x]]
             
         MDList:
             TwoLineListItem:
-                tex: "Nome Fantasia"
+                tex: "Razão Social"
+                secondary_text: root.nome_legal
+            TwoLineListItem:
+                tex: "Nome fantasia"
                 secondary_text: root.nome_fantasia
-            TwoLineListItem:
-                text: "Razão Social"
-                secondary_text: root.razao_social
-            TwoLineListItem:
-                text: "CIE"
-                secondary_text: root.cie
             TwoLineListItem:
                 text: "CNPJ"
                 secondary_text: root.cnpj
             TwoLineListItem:
-                text: "Tipo de Instituição"
-                secondary_text: root.tipo_instituicao
+                text: "Selecione"
+                secondary_text: root.adm_publica_privada
+            TwoLineListItem:
+                text: "Data de inauguração"
+                secondary_text: root.data_inauguracao
+            TwoLineListItem:
+                text: "Diretor responsável"
+                secondary_text: root.diretor_responsavel
             TwoLineListItem:
                 text: "Fone I"
                 secondary_text: root.fone_i
@@ -33,18 +36,14 @@
                 text: "Email"
                 secondary_text: root.email
             TwoLineListItem:
-                text: "Contato"
-                secondary_text: root.contato
-            TwoLineListItem:
-                text: "Fone contato I"
-                secondary_text: root.fone_contato_i
-            TwoLineListItem:
-                text: "Fone contato II"
-                secondary_text: root.fone_contato_i
-            TwoLineListItem:
                 text: "Logradouro"
                 secondary_text: root.logradouro
             TwoLineListItem:
+                text: "Bairro"
+                secondary_text: root.bairro
+            TwoLineListItem:
+                text: "Cidade"
+                secondary_text: root.cidade
+            TwoLineListItem:
                 text: "Observação"
                 secondary_text: root.observacao
-                

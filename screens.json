@@ -1,39 +1,52 @@
-{
-
-    "jazigo": {
-        "import": "from libs.uix.baseclass.jazigo.jazigo_screen import JazigoScreen",
-        "kv": "libs/uix/kv/jazigo/jazigo_screen.kv",
-        "object": "JazigoScreen()"
-    },
-    "login": {
-        "import": "from libs.uix.baseclass.login.login_screen import LoginScreen",
-        "kv": "libs/uix/kv/login/login_screen.kv",
-        "object": "LoginScreen()"
-    },
-     
-    "cidadaoinfo": {
-        "import": "from libs.uix.baseclass.cidadao.cidadao_info_screen import CidadaoInfoScreen",
-        "kv": "libs/uix/kv/cidadao/cidadao_info_screen.kv",
-        "object": "CidadaoInfoScreen()"
-    },
-    
-    "cidadao": {
-        "import": "from libs.uix.baseclass.cidadao.cidadao_screen import CidadaoScreen",
-        "kv": "libs/uix/kv/cidadao/cidadao_screen.kv",
-        "object": "CidadaoScreen()"
-    },
+{   
     "cidadaocriar": {
         "import": "from libs.uix.baseclass.cidadao.cidadao_criar_screen import CidadaoCriarScreen",
         "kv": "libs/uix/kv/cidadao/cidadao_criar_screen.kv",
         "object": "CidadaoCriarScreen()"
     },
+    "cidadao": {
+    "import": "from libs.uix.baseclass.cidadao.cidadao_screen import CidadaoScreen",
+    "kv": "libs/uix/kv/cidadao/cidadao_screen.kv",
+    "object": "CidadaoScreen()"
+    },
+    
+    "cidadaoinfo": {
+    "import": "from libs.uix.baseclass.cidadao.cidadao_info_screen import CidadaoInfoScreen",
+    "kv": "libs/uix/kv/cidadao/cidadao_info_screen.kv",
+    "object": "CidadaoInfoScreen()"
+    },
+    
+     
+    
+    "login": {
+        "import": "from libs.uix.baseclass.login.login_screen import LoginScreen",
+        "kv": "libs/uix/kv/login/login_screen.kv",
+        "object": "LoginScreen()"
+    },
+    
     "home": {
         "import": "from libs.uix.baseclass.home_screen import HomeScreen",
         "kv": "libs/uix/kv/home_screen.kv",
         "object": "HomeScreen()"
     },
-
-   
+    "jazigo": {
+        "import": "from libs.uix.baseclass.jazigo.jazigo_screen import JazigoScreen",
+        "kv": "libs/uix/kv/jazigo/jazigo_screen.kv",
+        "object": "JazigoScreen()"
+    },   
+    
+    "jazigoinfo": {
+        "import": "from libs.uix.baseclass.jazigo.jazigo_info_screen import JazigoInfoScreen",
+        "kv": "libs/uix/kv/jazigo/jazigo_info_screen.kv",
+        "object": "JazigoInfoScreen()"
+    },
+    
+    "jazigocriar": {
+        "import": "from libs.uix.baseclass.jazigo.jazigo_criar_screen import JazigoCriarScreen",
+        "kv": "libs/uix/kv/jazigo/jazigo_criar_screen.kv",
+        "object": "JazigoCriarScreen()"
+    },
+    
     "usuario": {
         "import": "from libs.uix.baseclass.usuario.usuario_screen import UsuarioScreen",
         "kv": "libs/uix/kv/usuario/usuario_screen.kv",
@@ -61,17 +74,51 @@
         "object": "LogradouroScreen()"
     },
 
+    "logradouroinfo": {
+        "import": "from libs.uix.baseclass.logradouro.logradouro_info_screen import LogradouroInfoScreen",
+        "kv": "libs/uix/kv/logradouro/logradouro_info_screen.kv",
+        "object": "LogradouroInfoScreen()"
+    },
+
+    "logradourocriar": {
+        "import": "from libs.uix.baseclass.logradouro.logradouro_criar_screen import LogradouroCriarScreen",
+        "kv": "libs/uix/kv/logradouro/logradouro_criar_screen.kv",
+        "object": "LogradouroCriarScreen()"
+    },
+
     "setor": {
         "import": "from libs.uix.baseclass.setor.setor_screen import SetorScreen",
         "kv": "libs/uix/kv/setor/setor_screen.kv",
         "object": "SetorScreen()"
     },
 
+    "setorinfo": {
+        "import": "from libs.uix.baseclass.setor.setor_info_screen import SetorInfoScreen",
+        "kv": "libs/uix/kv/setor/setor_info_screen.kv",
+        "object": "SetorInfoScreen()"
+    },
+
+    "setorcriar": {
+        "import": "from libs.uix.baseclass.setor.setor_criar_screen import SetorCriarScreen",
+        "kv": "libs/uix/kv/setor/setor_criar_screen.kv",
+        "object": "SetorCriarScreen()"
+    },
+
     "instituicao": {
         "import": "from libs.uix.baseclass.instituicao.instituicao_screen import InstituicaoScreen",
         "kv": "libs/uix/kv/instituicao/instituicao_screen.kv",
         "object": "InstituicaoScreen()"
-    }
-   
+    },
 
+    "instituicaoinfo": {
+        "import": "from libs.uix.baseclass.instituicao.instituicao_info_screen import InstituicaoInfoScreen",
+        "kv": "libs/uix/kv/instituicao/instituicao_info_screen.kv",
+        "object": "InstituicaoInfoScreen()"
+    },
+
+    "instituicaocriar": {
+        "import": "from libs.uix.baseclass.instituicao.instituicao_criar_screen import InstituicaoCriarScreen",
+        "kv": "libs/uix/kv/instituicao/instituicao_criar_screen.kv",
+        "object": "InstituicaoCriarScreen()"
+    }
 }

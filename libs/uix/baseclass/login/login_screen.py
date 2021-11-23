@@ -6,7 +6,7 @@ class LoginScreen(Screen):
     """
     esta e uma tela de login
     """
-    dados = JsonStore('auth.json')
+    dados = JsonStore('banco/auth.json')
     def login(self):
         cpf =  self.ids.cpf.text
         senha = self.ids.senha.text
