@@ -1,0 +1,26 @@
+[
+  {
+    "Angra dos Reis":{
+      "nome":"Angra dos Reis",
+      "id": 3300100,
+      "microrregiao": {
+        "id": 33013,
+        "nome": "Baía da Ilha Grande",
+        "mesorregiao": {
+          "id": 3305,
+          "nome": "Sul Fluminense",
+          "UF": {
+            "id": 33,
+          "sigla": "RJ",
+          "nome": "Rio de Janeiro",
+          "regiao": {
+            "id": 3,
+            "sigla": "SE",
+            "nome": "Sudeste"
+          }
+        }
+      }
+    }
+    }
+  }
+]

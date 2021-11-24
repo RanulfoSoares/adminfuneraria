@@ -52,7 +52,7 @@
                 MDTextButton:
                     height: 300
                     text: "Selecione a cor"
-                    id: Cor
+                    id: cor
                     pos_hint: {'center_x': 0.6}
                 MDTextButton:
                     height: 300
@@ -60,6 +60,18 @@
                     text: "Selecione o estado civil"
                     id: estado_civil
                     on_release: root.estado_civil()
+                MDTextButton:
+                    height: 300
+                    pos_hint: {'center_x': 0.6}
+                    text: "Selecione a nacionalidade"
+                    id: nacionalidade
+                    on_release: root.abrir_paises()
+                MDTextButton:
+                    height: 300
+                    pos_hint: {'center_x': 0.6}
+                    text: "Selecione a escolaridade"
+                    id: escolaridade
+                    on_release: root.escolaridade()
                 MDTextField:
                     hint_text: "Digite a data de nascimento"
                     pos_hint: {'center_x': 0.6}
@@ -75,12 +87,13 @@
                     id: cidade
                     pos_hint: {'center_x': 0.6}
                     text: "Escolha sua cidade"
-                MDTextButton:
+                    on_release: root.abrir_menu_cidade()
+                MDTextField:
                     height: 300
                     id: bairro
                     pos_hint: {'center_x': 0.6}
                     text: "Escolha seu Bairro"
-                MDTextButton:
+                MDTextField:
                     height: 300
                     text: "Escolha seu logradouro"
                     pos_hint: {'center_x': 0.6}
@@ -94,7 +107,9 @@
                     id: complemento
                     pos_hint: {'center_x': 0.6}
                 MDRaisedButton:
+                    id:criar
                     text: 'criar cidadao'
                     pos_hint: {'center_x': 0.6}
+                    padding: 20
                     on_release:
                         if root.inserir_dados() == True: app.root.current = 'cidadao'

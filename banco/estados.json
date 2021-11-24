@@ -1,1 +1,83 @@
-{"Rond\u00f4nia": {}, "Acre": {}, "Amazonas": {}, "Roraima": {}, "Par\u00e1": {}, "Amap\u00e1": {}, "Tocantins": {}, "Maranh\u00e3o": {}, "Piau\u00ed": {}, "Cear\u00e1": {}, "Rio Grande do Norte": {}, "Para\u00edba": {}, "Pernambuco": {}, "Alagoas": {}, "Sergipe": {}, "Bahia": {}, "Minas Gerais": {}, "Esp\u00edrito Santo": {}, "Rio de Janeiro": {}, "S\u00e3o Paulo": {}, "Paran\u00e1": {}, "Santa Catarina": {}, "Rio Grande do Sul": {}, "Mato Grosso do Sul": {}, "Mato Grosso": {}, "Goi\u00e1s": {}, "Distrito Federal": {}}
+{
+    "Rond\u00f4nia": {
+        "id": 11
+    },
+    "Acre": {
+        "id": 12
+    },
+    "Amazonas": {
+        "id": 13
+    },
+    "Roraima": {
+        "id": 14
+    },
+    "Par\u00e1": {
+        "id": 15
+    },
+    "Amap\u00e1": {
+        "id": 16
+    },
+    "Tocantins": {
+        "id": 17
+    },
+    "Maranh\u00e3o": {
+        "id": 21
+    },
+    "Piau\u00ed": {
+        "id": 22
+    },
+    "Cear\u00e1": {
+        "id": 23
+    },
+    "Rio Grande do Norte": {
+        "id": 24
+    },
+    "Para\u00edba": {
+        "id": 25
+    },
+    "Pernambuco": {
+        "id": 26
+    },
+    "Alagoas": {
+        "id": 27
+    },
+    "Sergipe": {
+        "id": 28
+    },
+    "Bahia": {
+        "id": 29
+    },
+    "Minas Gerais": {
+        "id": 31
+    },
+    "Esp\u00edrito Santo": {
+        "id": 32
+    },
+    "Rio de Janeiro": {
+        "id": 33
+    },
+    "S\u00e3o Paulo": {
+        "id": 35
+    },
+    "Paran\u00e1": {
+        "id": 41
+    },
+    "Santa Catarina": {
+        "id": 42
+    },
+    "Rio Grande do Sul": {
+        "id": 43
+    },
+    "Mato Grosso do Sul": {
+        "id": 50
+    },
+    "Mato Grosso": {
+        "id": 51
+    },
+    "Goi\u00e1s": {
+        "id": 52
+    },
+    "Distrito Federal": {
+        "id": 53
+    }
+}

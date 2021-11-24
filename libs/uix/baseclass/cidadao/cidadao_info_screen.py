@@ -19,6 +19,9 @@ class CidadaoInfoScreen(MDScreen):
     cor = StringProperty()
     estado_civil = StringProperty()
     data_nascimento = StringProperty()
+    escolaridade = StringProperty() 
+    nacionalidade = StringProperty()
+
 
     nome = 'example'
     apelido = 'apelido'
@@ -33,7 +36,8 @@ class CidadaoInfoScreen(MDScreen):
     sexo = 'example'
     cor = 'example'
     data_nascimento = 'example'
-    
+    escolaridade = 'example'
+    nacionalidade = 'example'    
     estado = 'example'
     cidade = 'example'
     bairro = 'example'
